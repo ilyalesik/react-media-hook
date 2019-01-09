@@ -1,6 +1,6 @@
 # react-media-hook
 
-React Hook for media query. 
+React Hook for Media Queries. 
 Uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) API.
 
 ## Installation
