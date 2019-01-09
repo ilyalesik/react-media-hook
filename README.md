@@ -39,7 +39,8 @@ const Component = () => {
 ## API
 
 #### `useMedia(query: string)`
-Returns *undefined*, or object:
+Returns *undefined* (for example, in Node.js environment 
+where *mathMedia* is not defined), or object:
 ```javascript
 {
     matches: boolean,
