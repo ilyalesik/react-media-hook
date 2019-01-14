@@ -1,6 +1,6 @@
 {
   "name": "react-media-hook",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "React Hook for media query",
   "main": "./dist/index.js",
   "scripts": {

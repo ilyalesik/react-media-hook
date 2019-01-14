@@ -19,15 +19,14 @@ npm i react-media-hook --save
 
 ## Usage
 
-Pass query to *useMedia*:
+Pass query to *useMediaPredicate*:
 
 ```javascript
 import React from "react";
-import { useMedia } from "react-media-hook";
+import { useMediaPredicate } from "react-media-hook";
 
 const Component = () => {
-    const mediaResult = useMedia("(min-width: 400px)");
-    const biggerThan400 = mediaResult && mediaResult.matches;
+    const biggerThan400 = useMediaPredicate("(min-width: 400px)");
     
     return <div>
         {biggerThan400 && <button>SomeButton</button>}
@@ -40,10 +39,13 @@ const Component = () => {
 
 #### `useMedia(query: string)`
 Returns *undefined* (for example, in Node.js environment 
-where *mathMedia* is not defined), or object:
+where *mathMedia* is not defined), or object, simular to *mathMedia(...)* result:
 ```javascript
 {
     matches: boolean,
     media: string
 }
 ```
+
+#### `useMediaPredicate(query: string)`
+Returns just *true* or *false*.
