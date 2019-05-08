@@ -6,6 +6,11 @@
 React Hook for Media Queries. 
 Uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) API.
 
+<a href="https://lessmess.agency/?utm_source=react-media-hook">
+  <img src="https://lessmess.agency/badges/sponsored_by_lessmess.svg"
+       alt="Sponsored by Lessmess" width="236" height="54">
+</a>
+
 ## Installation
 
 Install it with yarn:
