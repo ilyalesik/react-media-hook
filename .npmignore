@@ -15,7 +15,9 @@ yarn.lock
 # project files
 src
 test
-examples
+example
 .travis.yml
 .babelrc
 .gitignore
+dist
+.cache

@@ -1,0 +1,7 @@
+// @flow
+export type MediaResult = {
+    matches: boolean,
+    media: string,
+};
+declare export function useMedia(query: string): ?MediaResult;
+declare export function useMediaPredicate(query: string): boolean;
