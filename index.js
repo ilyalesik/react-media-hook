@@ -1,7 +1,7 @@
 var React = require('react')
 
 function fallbackMathMedia (query) {
-  if (typeof matchMedia === 'function') {
+  if (typeof matchMedia !== 'function') {
     return null
   }
   return matchMedia(query)
