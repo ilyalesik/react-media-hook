@@ -8,6 +8,9 @@ function fallbackMathMedia (query) {
 }
 
 function omitMatchMediaResult (matchMediaResult) {
+  if (!matchMediaResult) {
+    return null
+  }
   return { media: matchMediaResult.media, matches: matchMediaResult.matches }
 }
 
