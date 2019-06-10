@@ -1,6 +1,6 @@
 {
   "name": "react-media-hook",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "React Hook for media query",
   "scripts": {
     "flow": "flow",
@@ -14,7 +14,7 @@
       "ignore": [
         "react"
       ],
-      "limit": "164 B",
+      "limit": "181 B",
       "path": "./index.js"
     }
   ],

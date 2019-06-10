@@ -1,11 +1,18 @@
 var React = require('react')
 
+function fallbackMathMedia (query) {
+  if (typeof matchMedia === 'function') {
+    return null
+  }
+  return matchMedia(query)
+}
+
 function omitMatchMediaResult (matchMediaResult) {
   return { media: matchMediaResult.media, matches: matchMediaResult.matches }
 }
 
 function useMedia (query) {
-  var result = React.useState(omitMatchMediaResult(matchMedia(query)))
+  var result = React.useState(omitMatchMediaResult(fallbackMathMedia(query)))
   var setResult = result[1]
 
   var callback = React.useCallback(function (matchMediaResult) {
@@ -14,7 +21,7 @@ function useMedia (query) {
 
   React.useEffect(
     function () {
-      var matchMediaResult = matchMedia(query)
+      var matchMediaResult = fallbackMathMedia(query)
       callback(matchMediaResult)
       matchMediaResult.addListener(callback)
       return function () { return matchMediaResult.removeListener(callback) }
