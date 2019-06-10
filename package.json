@@ -11,8 +11,18 @@
     "build:clean": "rimraf dist",
     "build:lib": "cross-env BABEL_ENV=production babel src --out-dir dist --ignore '**/__tests__/**'",
     "build:flow": "gen-flow-files src --out-dir dist",
+    "size": "size-limit",
     "prepublish": "npm run flow:check && npm run build"
   },
+  "size-limit": [
+    {
+      "ignore": [
+        "react"
+      ],
+      "limit": "476 B",
+      "path": "./dist/index.js"
+    }
+  ],
   "files": [
     "dist",
     "src"
@@ -54,6 +64,7 @@
     "gen-flow-files": "^0.1.3",
     "pre-commit": "^1.2.2",
     "prettier": "^1.15.3",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "size-limit": "^1.3.6"
   }
 }
