@@ -1,7 +1,15 @@
 # react-media-hook
 
+[![npm version](https://img.shields.io/npm/v/react-media-hook.svg)](https://www.npmjs.com/package/react-media-hook)
+[![npm downloads](https://img.shields.io/npm/dt/react-media-hook.svg)](https://www.npmjs.com/package/react-media-hook)
+
 React Hook for Media Queries. 
 Uses [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) API.
+
+<a href="https://lessmess.agency/?utm_source=react-media-hook">
+  <img src="https://lessmess.agency/badges/sponsored_by_lessmess.svg"
+       alt="Sponsored by Lessmess" width="236" height="54">
+</a>
 
 ## Installation
 
