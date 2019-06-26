@@ -15,7 +15,9 @@ function omitMatchMediaResult (matchMediaResult) {
 }
 
 function useMedia (query) {
-  var result = React.useState(omitMatchMediaResult(fallbackMathMedia(query)))
+  var result = React.useState(function () {
+    return omitMatchMediaResult(fallbackMathMedia(query))
+  })
   var setResult = result[1]
 
   var callback = React.useCallback(function (matchMediaResult) {
