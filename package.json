@@ -1,6 +1,8 @@
 {
   "name": "react-media-hook",
   "version": "0.4.7",
+  "main": "index.js",
+  "types": "index.d.ts",
   "description": "React Hook for media query",
   "scripts": {
     "flow": "flow",
