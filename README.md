@@ -1,6 +1,6 @@
 # react-media-hook
 
-[![CircleCI](https://circleci.com/gh/lessmess-dev/react-media-hook)](https://circleci.com/gh/lessmess-dev/react-media-hook)
+[![CircleCI](https://circleci.com/gh/lessmess-dev/react-media-hook?style=shield)](https://circleci.com/gh/lessmess-dev/react-media-hook)
 [![npm version](https://img.shields.io/npm/v/react-media-hook.svg)](https://www.npmjs.com/package/react-media-hook)
 [![npm downloads](https://img.shields.io/npm/dt/react-media-hook.svg)](https://www.npmjs.com/package/react-media-hook)
 
