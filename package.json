@@ -16,7 +16,8 @@
         "react"
       ],
       "limit": "188 B",
-      "path": "./index.js"
+      "path": "./index.js",
+      "running": false
     }
   ],
   "eslintConfig": {
