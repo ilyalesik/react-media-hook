@@ -53,10 +53,3 @@ where *mathMedia* is not defined), or object, simular to *mathMedia(...)* result
 
 #### `useMediaPredicate(query: string)`
 Returns just *true* or *false*.
-
-## Sponsored
-<a href="https://lessmess.agency/?utm_source=react-media-hook">
-  <img src="https://lessmess.agency/badges/sponsored_by_lessmess.svg"
-       alt="Sponsored by Lessmess" width="236" height="54">
-</a>
-
