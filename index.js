@@ -28,8 +28,14 @@ function useMedia (query) {
     function () {
       var matchMediaResult = fallbackMatchMedia(query)
       callback(matchMediaResult)
-      matchMediaResult.addListener(callback)
-      return function () { return matchMediaResult.removeListener(callback) }
+      if (matchMediaResult) {
+        matchMediaResult.addEventListener('change', callback)
+      }
+      return function () {
+        if (matchMediaResult) {
+          matchMediaResult.removeEventListener('change', callback)
+        }
+      }
     },
     [callback, query]
   )
