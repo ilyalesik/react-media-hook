@@ -15,6 +15,13 @@ function omitMatchMediaResult (matchMediaResult) {
 }
 
 function useMedia (query) {
+  var mounted = React.useState(false)
+  var setMounted = mounted[1]
+
+  React.useEffect(function () {
+    setMounted(true)
+  }, [setMounted])
+
   var result = React.useState(function () {
     return omitMatchMediaResult(fallbackMatchMedia(query))
   })
@@ -39,6 +46,10 @@ function useMedia (query) {
     },
     [callback, query]
   )
+
+  if (!mounted[0]) {
+    return null
+  }
 
   return result[0]
 }
